@@ -13,7 +13,7 @@ env/
 
 # Flask instance folder
 instance/
-
+    
 # SQL database
 *.sqlite3
 *.db
