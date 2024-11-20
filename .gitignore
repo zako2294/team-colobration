@@ -1,1 +1,55 @@
-query.py
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Flask instance folder
+instance/
+
+# SQL database
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Cache files
+*.cache
+.cache/
+*.pytest_cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+
+# Static and media uploads (if any)
+static/uploads/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Miscellaneous
+coverage/
+*.bak
+*.swp
+*.tmp

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #tableItems {
 	margin-left: 20px;
 	margin-right: 20px;
@@ -65,3 +66,167 @@
 	font-size: 20px;
 }
 
+=======
+/* General container for the cart items */
+#tableItems {
+    margin: 20px auto;
+    max-width: 900px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual items */
+#tableItems div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#tableItems div:last-child {
+    border-bottom: none;
+}
+
+/* Item image styling */
+#itemImage {
+    flex: 1;
+    max-width: 80px;
+}
+
+#image {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Item name styling */
+#itemName {
+    flex: 3;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#itemNameTag {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Styling for the 'In stock' text */
+.inStock {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4CAF50; /* Subtle green for availability */
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Remove button section */
+.removeLink {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.removeLink:hover {
+    color: #CC0000;
+    transform: scale(1.05);
+}
+
+/* Price section */
+#itemPrice {
+    flex: 1;
+    text-align: right;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Separator line */
+#seperator {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+/* Total price section */
+#total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 10px;
+}
+
+#subtotal {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Checkout button styling */
+a[href="/checkout"] {
+    display: inline-block;
+    margin: 20px auto 0 auto;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a[href="/checkout"]:hover {
+    background-color: #45a049;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    #tableItems {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #tableItems div {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #itemPrice {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .removeLink {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    a[href="/checkout"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+>>>>>>> e5d7d35 (Add .gitignore file)
