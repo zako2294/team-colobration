@@ -16,7 +16,7 @@ A simple E-commerce website using Flask.
 3. Enter localhost:5000 in the browser
 
 ## Pipenv instructions ##
-1. Install pipenv (python3 -m pip install --user pipenv)
+1. Install pipenv (python -m pip install pipenv)
 2. Install dependencies (pipenv install --dev)
 3. Setup database (pipenv run python database.py)
 4. Run the server (pipenv run python main.py)
