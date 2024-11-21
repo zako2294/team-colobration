@@ -1,14 +1,20 @@
 # Use an official Python runtime as a parent image
 FROM python:3.8-slim
+
 # Set the working directory in the container
 WORKDIR /app
+
 # Copy the current directory contents into the container
 COPY . /app
-# Install any needed packages specified in requirements.txt
+
+# Install dependencies from requirements.txt
 RUN pip install -r requirements.txt
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
-# Define environment variable
-#ENV NAME World
-# Run app.py when the container launches
-CMD ["python", "main.py"]
+
+# Install Gunicorn as the web server
+RUN pip install gunicorn
+
+# Expose port 80 for Heroku
+EXPOSE 80
+
+# Command to run the app using Gunicorn
+CMD ["gunicorn", "-b", "0.0.0.0:80", "main:app"]
